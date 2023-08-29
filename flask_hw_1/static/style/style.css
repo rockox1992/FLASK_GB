@@ -1,0 +1,11 @@
+* {
+    padding: 1;
+    margin: 1;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+img {
+    display: block;
+    max-width: 15%;
+}

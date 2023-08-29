@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../static/style/style.css">
+    <title>
+        {% block title %}
+            Мой магазин
+        {% endblock %}
+    </title>
+</head>
+<body>
+    <header>
+        <h1 class="text">LOGO</h1>
+    </header>
+
+    <main>
+        <nav>
+            <h1 class="text_main">Выбирай с умом</h1>
+            <ul>
+                <li><a class="link_txt" href="{{url_for('shoes')}}">shoes</a></li>
+                <li><a class="link_txt" href="{{url_for('clothes')}}">clothes</a></li>
+                <li><a class="link_txt" href="{{url_for('jacket')}}">jacket</a></li>
+                <li><a class="link_txt" href="{{url_for('base')}}">На главную</a></li>
+            </ul>
+        </nav>
+
+        {% block content %}
+        <div class="content">
+        </div>
+        {% endblock %}
+
+    </main>
+
+    <footer>
+        <h1 class="text_footer">CONTACTS</h1>
+    </footer>
+
+</body>
+</html>
